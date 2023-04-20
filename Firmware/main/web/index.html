@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stove</title>
+
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" type="image/ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/javascript.js"></script>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <td>Light</td>
+            <td>
+                <label class="switch" id="light">
+                    <input type="checkbox" id="light-input" onchange="set_light(this);"/>
+                    <span class="switch slider round" id="light-span"/>
+                </label>
+            </td>
+        </tr><tr>
+            <td>Cooling Fan</td>
+            <td>
+                <label class="switch" id="cooling_fan">
+                    <input type="checkbox" id="cooling_fan-input" onchange="set_cooling_fan(this);"/>
+                    <span class="switch slider round" id="cooling_fan-span"/>
+                </label>
+            </td>
+        </tr><tr>
+            <td>Use Bottom Element</td>
+            <td>
+                <label class="switch" id="use_bot_elem">
+                    <input type="checkbox" id="use_bot_elem-input" onchange="set_use_bottom_element(this);"/>
+                    <span class="switch slider round" id="use_bot_elem-span"/>
+                </label>
+            </td>
+        </tr><tr>
+            <td>Use Top Element</td>
+            <td>
+                <label class="switch" id="use_top_element">
+                    <input type="checkbox" id="use_top_element-input" onchange="set_use_top_element(this);"/>
+                    <span class="switch slider round" id="use_top_element-span"/>
+                </label>
+            </td>
+        </tr><tr>
+            <td>Downdraft</td>
+            <td>
+                <div class="tri-state-toggle">
+                    <button class="tri-state-toggle-button active_off" id="downdraft-off" onclick="set_downdraft_fan('0');">Off</button>
+                    <button class="tri-state-toggle-button" id="downdraft-low" onclick="set_downdraft_fan('1');">Low</button>
+                    <button class="tri-state-toggle-button" id="downdraft-high" onclick="set_downdraft_fan('2');">High</button>
+                </div>
+            </td>
+        </tr><tr>
+            <td>Convection Fan</td>
+            <td>
+                <div class="tri-state-toggle">
+                    <button class="tri-state-toggle-button active_off" id="convection_fan-off" onclick="set_convection_fan('0');">Off</button>
+                    <button class="tri-state-toggle-button" id="convection_fan-low" onclick="set_convection_fan('1');">Low</button>
+                    <button class="tri-state-toggle-button" id="convection_fan-high" onclick="set_convection_fan('2');">High</button>
+                </div>
+            </td>
+        </tr><tr>
+        <td><br/></td><td><br/></td>
+        </tr><tr>
+            <td>Stove Mode</td>
+            <td>
+                <div class="tri-state-toggle">
+                    <button class="tri-state-toggle-button active_off" id="stove_mode-off" onclick="set_stove_mode('0');">Off</button>
+                    <button class="tri-state-toggle-button" id="stove_mode-low" onclick="set_stove_mode('1');">Man.</button>
+                    <button class="tri-state-toggle-button" id="stove_mode-high" onclick="set_stove_mode('2');">Time.</button>
+                </div>
+            </td>
+        </tr><tr>
+        <td><br/></td><td><br/></td>
+        </tr><tr>
+        <td>Target Temperature</td>
+        <td>
+            <div id="target_temp">
+                <div id="act_target_temp"></div>
+                <input type="number" id="target_temp-input" min="0" max="600" step="25"/>
+                &#8457;<!--*F-->
+                <button class="active_off" id="target_temp-set" onclick="set_target_temperature();">Set</button>
+            </div>
+        </td>
+    </tr>
+        <td>Current Temperature</td>
+        <td>
+            <p id="act_current_temp"></p>
+        </td>
+    </tr>
+    </table>
+    <br/>
+    <table class="timers_table"><tbody id="timers_table">
+        <tr id="timers_header">
+            <th>remaining</th>
+            <th>duration</th>
+            <th>Set Temp</th>
+            <th>action</th>
+            <th></th>
+        </tr>
+        <tr id="add_row">
+            <td>-</td>
+            <td><input type="number" id="new_task_hour" min='0' max='23'>hr</td>
+            <td><input type="number" id="new_task_argument" min="0" max="600" step="25"></td>
+            <td id="new_task_action"></td>
+            <td><button onclick="make_timer()" class="add_timer"></button></td>
+        </tr>
+    </tbody></table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "MCP9600-E_MX")(type "KiCad")(uri "${KIPRJMOD}/lib/MCP9600-E_MX.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-S2-WROOM")(type "KiCad")(uri "${KIPRJMOD}/lib/ESP32-S2-WROOM.kicad_sym")(options "")(descr ""))
+  (lib (name "ThermocoupleShielded")(type "KiCad")(uri "${KIPRJMOD}/lib/ThermocoupleShielded.kicad_sym")(options "")(descr ""))
+)

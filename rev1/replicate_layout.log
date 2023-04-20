@@ -1,0 +1,72 @@
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 278:Plugin executed on: 'linux'
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 279:Plugin executed with python version: '3.10.9 (main, Dec  7 2022, 13:47:07) [GCC 12.2.0]'
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 280:KiCad build version: 6.0.9+dfsg-1
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 281:Plugin version: 1.1.0
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 282:Frame repr: <wx._core.Frame object at 0x7f7b3f66a050>
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 301:Preparing replicator with K4 as a reference
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.replicate_layout 98:getting a list of all footprints on board
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 329:source anchor footprint is 'K4'
+Located on: ['SPDT_Relay1']
+With filenames: ['SPDT_Relay.kicad_sch']
+With sheet_id:['SPDT_Relay1']
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 336:Corresponding footprints are 
+[('K6', ['SPDT_Relay5']), ('K5', ['SPDT_Relay4']), ('K4', ['SPDT_Relay1']), ('K3', ['SPDT_Relay3']), ('K2', ['SPDT_Relay0']), ('K1', ['SPDT_Relay2'])]
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 348:Showing dialog
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 354:Toolbar position: wx.Point(2526, 91)
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 360:Dialog position: wx.Point(2162, 91)
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.replicate_layout 329:constructing a list of sheets suitable for replication on level:'SPDT_Relay1', file:'SPDT_Relay.kicad_sch'
+12-31 08:18:58 com_github_MitjaNemec_ReplicateLayout.replicate_layout 366:suitable sheets are:[['SPDT_Relay0'], ['SPDT_Relay2'], ['SPDT_Relay3'], ['SPDT_Relay4'], ['SPDT_Relay5']]
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 329:constructing a list of sheets suitable for replication on level:'SPDT_Relay1', file:'SPDT_Relay.kicad_sch'
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 366:suitable sheets are:[['SPDT_Relay0'], ['SPDT_Relay2'], ['SPDT_Relay3'], ['SPDT_Relay4'], ['SPDT_Relay5']]
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 128:Replicating layout
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 146:Starting replication of sheets: [['SPDT_Relay0'], ['SPDT_Relay2'], ['SPDT_Relay3'], ['SPDT_Relay4'], ['SPDT_Relay5']]
+on level: ['SPDT_Relay1']
+with tracks=True, zone=True, text=True, containing=True, remove=False, locked=False, by_group=False
+12-31 08:19:01 root 218:updating GUI message: 'Preparing for replication'
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 215:Getting the list of source footprints
+12-31 08:19:01 root 223:updating GUI with: 0
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 230:Getting the list of all the remaining footprints
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 235:Getting nets local to source footprints
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 238:Getting source bounding box
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 242:Getting source tracks
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 251:Getting source zones
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 260:Getting source text items
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 269:Getting source drawing items
+12-31 08:19:01 root 218:updating GUI message: 'Replicating footprints'
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 663:Replicating footprints
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 669:Replicating footprints on sheet ['SPDT_Relay0']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 669:Replicating footprints on sheet ['SPDT_Relay2']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 669:Replicating footprints on sheet ['SPDT_Relay3']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 669:Replicating footprints on sheet ['SPDT_Relay4']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 669:Replicating footprints on sheet ['SPDT_Relay5']
+12-31 08:19:01 root 218:updating GUI message: 'Replicating tracks'
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 829:Replicating tracks
+12-31 08:19:01 root 223:updating GUI with: 0
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 835:Replicating tracks on sheet ['SPDT_Relay0']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 835:Replicating tracks on sheet ['SPDT_Relay2']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 835:Replicating tracks on sheet ['SPDT_Relay3']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 835:Replicating tracks on sheet ['SPDT_Relay4']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 835:Replicating tracks on sheet ['SPDT_Relay5']
+12-31 08:19:01 root 218:updating GUI message: 'Replicating zones'
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 887:Replicating zones
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 894:Replicating zones on sheet ['SPDT_Relay0']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 894:Replicating zones on sheet ['SPDT_Relay2']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 894:Replicating zones on sheet ['SPDT_Relay3']
+12-31 08:19:01 root 223:updating GUI with: 60
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 894:Replicating zones on sheet ['SPDT_Relay4']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 894:Replicating zones on sheet ['SPDT_Relay5']
+12-31 08:19:01 root 218:updating GUI message: 'Replicating text'
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 957:Replicating text
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 964:Replicating text on sheet ['SPDT_Relay0']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 964:Replicating text on sheet ['SPDT_Relay2']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 964:Replicating text on sheet ['SPDT_Relay3']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 964:Replicating text on sheet ['SPDT_Relay4']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 964:Replicating text on sheet ['SPDT_Relay5']
+12-31 08:19:01 root 218:updating GUI message: 'Replicating drawings'
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 997:Replicating drawings
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1003:Replicating drawings on sheet ['SPDT_Relay0']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1003:Replicating drawings on sheet ['SPDT_Relay2']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1003:Replicating drawings on sheet ['SPDT_Relay3']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1003:Replicating drawings on sheet ['SPDT_Relay4']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1003:Replicating drawings on sheet ['SPDT_Relay5']
+12-31 08:19:01 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 152:Replication complete
